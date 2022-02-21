@@ -10,6 +10,7 @@ do {
       "No cumple con el requisito, debe ser un numero, intente nuevamente"
     );
   }
+  ciclos= parseInt(ciclos)
   if (ciclos <= 0) {
     console.log("No cumple con el requisito, debe ser un numero mayor a 0");
     p1 = true;
@@ -104,7 +105,7 @@ for (let i = 1; i <= ciclos; i++) {
           enpalabra(p) +
           ", jugada computadora: " +
           enpalabra(juegocomputadora) +
-          ",EMPADADOS!!!!!"
+          ", EMPATE!!!!!"
       );
       juegosempatados = juegosempatados + 1;
       break;
@@ -116,11 +117,10 @@ for (let i = 1; i <= ciclos; i++) {
           enpalabra(p) +
           ", jugada computadora: " +
           enpalabra(juegocomputadora) +
-          ",GANO COMPUTADORA!!!!!"
+          ", GANO COMPUTADORA!!!!!"
       );
       puntoscomputadora = puntoscomputadora + 1;
       break;
-
     default:
       console.log(
         "Juego numero: " +
@@ -129,7 +129,7 @@ for (let i = 1; i <= ciclos; i++) {
           enpalabra(p) +
           ", jugada computadora: " +
           enpalabra(juegocomputadora) +
-          ",GANO USUARIO!!!!!"
+          ", GANO USUARIO!!!!!"
       );
       puntosusuario = puntosusuario + 1;
       break;
